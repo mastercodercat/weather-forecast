@@ -56,7 +56,7 @@ const Search = ({ term, city, options, onInputChange, onOptionSelect, fetchWeath
             className="px-3 py-2 rounded-lg border-2 border-white outline-none text-black"
           />
           <ul className="bg-white rounded-b-md top-9 absolute ml-1 left-16 sm:left-20 md:left-8">
-            {options.map((option: OptionType, index) => (
+            {options?.map((option: OptionType, index) => (
               <li key={`options_${index}`}>
                 <button
                   className="text-left text-sm w-full hover:bg-zinc-700 hover:text-white px-2 py-1"
